@@ -1,3 +1,4 @@
+include templates/header
 
 doctype html
 html
@@ -13,21 +14,19 @@ html
         meta(name="twitter:site" content="http://banconeon.com.br")
         meta(name="twitter:title" content="Banco Neon")
         meta(name="twitter:description" content="O banco Neon é tipo um banco, só que totalmente diferente. Queremos provar que você não precisa odiar seu banco. Peça sua conta!")
-
-        meta(name="twitter:image" content="../Content/assets/imagens/banco-neon.jpg")
+        meta(name="twitter:image" content="./assets/images/banco-neon.jpg")
 
         meta(property="og:title" content="Banco Neon")
         meta(property="og:type" content="article")
         meta(property="og:url" content="http://banconeon.com.br")
-        meta(property="og:image" content="../Content/assets/imagens/banco-neon.jpg")
+        meta(property="og:image" content="./assets/images/banco-neon.jpg")
         meta(property="og:description" content="O banco Neon é tipo um banco, só que totalmente diferente. Queremos provar que você não precisa odiar seu banco. Peça sua conta!")
         meta(property="og:site_name" content="Banco Neon")
-
-
 
         link(rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon.png")
         link(rel="stylesheet" type="text/css" href="./assets/styles/main.css")
 
     body
+        +header
 
         script(type="text/javascript" src="./assets/scripts/components/main.js")
