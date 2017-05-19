@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39.34" height="40" viewBox="0 0 39.34 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0c4a6e;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Ellipse" class="cls-1" d="M1108.67,1370a20,20,0,1,1-19.67,20A19.828,19.828,0,0,1,1108.67,1370Zm1.85,30.85h-4.6V1390h-2.3v-3.74h2.3v-2.25c0-3.05,1.3-4.86,4.98-4.86h3.07v3.74h-1.92c-1.43,0-1.53.52-1.53,1.5v1.87h3.47l-0.4,3.74h-3.07v10.85Z" transform="translate(-1089 -1370)"/>
+</svg>
