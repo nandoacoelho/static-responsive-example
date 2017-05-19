@@ -1,0 +1,45 @@
+.neon-hero
+  overflow: hidden
+  &__background
+    width: 100%
+    margin-top: -60px
+
+    &__desktop,
+    &__mobile
+      width: 100%
+
+    &__desktop
+      display: none
+
+      @media (min-width: $medium)
+        display: block
+
+    &__mobile
+      display: block
+
+      @media (min-width: $medium)
+        display: none
+
+  &__title
+    z-index: 1
+    font-size: 22px
+    color: $white
+    line-height: 1.111
+    position: absolute
+    top: 0
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 20% auto
+
+    @media (min-width: $small)
+      font-size: 26px
+
+    @media (min-width: $medium)
+      font-size: 45px
+      margin: 12% auto
+
+    @media (min-width: $extra-large)
+      font-size: 50px
+
