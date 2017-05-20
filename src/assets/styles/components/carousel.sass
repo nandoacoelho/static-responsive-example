@@ -1,0 +1,84 @@
+.neon-information-display
+  position: relative
+  opacity: 0
+  animation: fadeIn 1s
+  animation-delay: 1s
+  animation-fill-mode: forwards
+
+.neon-carousel
+  position: relative
+  overflow: hidden
+  border-radius: 4px
+
+  &__slides
+    position: relative
+    margin: 0
+    padding: 0
+    height: 400px
+    list-style: none
+
+    @media (min-width: $medium)
+      height: 700px
+
+    &__item
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      float: left
+      margin: 0
+      padding: 0
+      width: calc(100vw)
+      height: 400px
+      text-align: center
+      line-height: 300px
+
+      @media (min-width: $medium)
+        height: 600px
+
+
+.neon-carousel__nav-left,
+.neon-carousel__nav-right
+  position: absolute
+  top: 40%
+  z-index: 999
+  display: flex
+  justify-content: center
+  align-items: center
+  border: 1px solid $grey-light
+  border-radius: 50%
+  color: $grey-light
+  width: 45px
+  height: 45px
+  text-decoration: none
+  font-weight: 600
+  font-size: 18px
+  opacity: 0.8
+  cursor: pointer
+  box-shadow: 0 18px 35px 0 rgba(0, 166, 221, 0.0)
+  transition: 0.3s
+
+  @media (min-width: $medium)
+    width: 90px
+    height: 90px
+
+  &:hover
+    border: 0
+    background: $blue-light
+    color: white
+    box-shadow: 0 18px 35px 0 rgba(0, 166, 221, 0.2)
+
+.neon-carousel__nav-left:hover,
+.neon-carousel__nav-right:hover
+  opacity: 1
+  -webkit-transition: all 0.2s ease
+
+.neon-carousel__nav-left
+  margin-left: 5%
+
+.neon-carousel__nav-right
+  right: 5%
+
+  .icon.-right
+    transform: rotate(180deg)

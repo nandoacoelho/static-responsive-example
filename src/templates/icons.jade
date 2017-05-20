@@ -34,10 +34,18 @@ mixin logo
 mixin icon-arrow
     svg.icon.-arrow(xmlns='http://www.w3.org/2000/svg', width='12', height='11', viewbox='0 0 12 11')
         defs
-            style.
-                .cls-1 { fill: currentColor; fill-rule: evenodd; }
-        path#Seta.cls-1(d='M.6 4.9h10.8a.604.604 0 1 1 0 1.207H.6A.604.604 0 1 1 .6 4.9zm4.618 5.916l-5.03-4.85a.608.608 0 0 1 0-.88.664.664 0 0 1 .914 0l5.03 4.848a.608.608 0 0 1 0 .882.663.663 0 0 1-.91-.003zm0-10.63l-5.03 4.85a.608.608 0 0 0 0 .883.663.663 0 0 0 .914 0l5.03-4.85a.608.608 0 0 0 0-.883.664.664 0 0 0-.91-.004z')
+        path(fill="currentColor" d='M.6 4.9h10.8a.604.604 0 1 1 0 1.207H.6A.604.604 0 1 1 .6 4.9zm4.618 5.916l-5.03-4.85a.608.608 0 0 1 0-.88.664.664 0 0 1 .914 0l5.03 4.848a.608.608 0 0 1 0 .882.663.663 0 0 1-.91-.003zm0-10.63l-5.03 4.85a.608.608 0 0 0 0 .883.663.663 0 0 0 .914 0l5.03-4.85a.608.608 0 0 0 0-.883.664.664 0 0 0-.91-.004z')
 
 mixin icon-download
     svg.icon.-download(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='17', height='21', viewbox='0 0 17 21')
         image(width='17', height='21', xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAVCAMAAACXIvXeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAclBMVEUAAACqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQaqhQYAAABzzlTyAAAAJHRSTlMALfhABHW9wLUMk9CsCvzDn4BPB8/6ThXTehrjC2L+uZAYtv0ObnrxAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAIdJREFUGNOly0cOgzAURdGHKcammGZ6qH//a4Q4IcSzSLnDI13glcMc2Lnk/ieeH/BQGBEhD3wPkiIeJ0aSmEckkSrrUikosyQjUA6hCiOFEsiNlJWuT6l1Vb4FTas76nTb4JKTGLEnfAT9QEOPb8H4GGHL1Y8ySUvkhJkt+d3CZqzbTnf7th6uWQ4pMnJ/7wAAAABJRU5ErkJggg==')
+
+mixin icon-linkedin
+    svg(xmlns='http://www.w3.org/2000/svg', width='39.32', height='40', viewbox='0 0 39.32 40')
+        defs
+            style.
+                .cls-1 { fill: #0c4a6e; fill-rule: evenodd; }
+        path#Linkedin.cls-1(d='M19.66 0A20 20 0 1 1-.01 20 19.828 19.828 0 0 1 19.66 0zm-4.99 29.73V17.37h-4.34v12.36h4.34zM12.5 15.68a2.433 2.433 0 1 0-.03 0h.03zm4.57 14.05h4.34v-6.9a2.54 2.54 0 0 1 .15-1 2.354 2.354 0 0 1 2.22-1.51c1.57 0 2.2 1.14 2.2 2.8v6.61h4.34v-7.09c0-3.8-2.14-5.56-5-5.56a4.37 4.37 0 0 0-3.94 2.08h.03v-1.79h-4.34c.06 1.16 0 12.36 0 12.36z')
+mixin chevron(classname)
+    svg(class="icon #{classname}" xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='14', height='28', viewbox='0 0 14 28')
+        image(data-name='Seta - Cinza', width='14', height='28', xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAcCAMAAABmiH5zAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAUVBMVEUAAADX2NrX2NrX2NrX2NrX2NrX2NrX2NrX2NrX2NrX2NrX2NrX2NrX2NrX2NrX2NrX2NrX2NrX2NrX2NrX2NrX2NrX2NrX2NrX2NrX2NoAAABTn/7KAAAAGXRSTlMAHNbT3N0fJOTZLeoV6zfJEfEPK7nC+yUgPwsazQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABjSURBVBjTddFZEoAgCABQTMrKzPbi/het6UOEkr83w7ACcJjK5kKqWc0jl+RaQlNWx+o92YEVyhoDxYk1U1ySViHYaM8EB51QpkpWpVQjPYYe8sdeWq6vj/P1hYQuszz7+5QbZuAGmFfr+SYAAAAASUVORK5CYII=')

@@ -1,0 +1,17 @@
+include card
+include icons
+
+mixin carousel
+    .neon-information-display
+        a.neon-carousel__nav-right(href="#" class="control_next")
+            +chevron('-right')
+        a.neon-carousel__nav-left(href="#" class="control_prev")
+            +chevron
+        #slider.neon-carousel
+            ul.neon-carousel__slides
+                li.neon-carousel__slides__item
+                    +card
+                li.neon-carousel__slides__item
+                    +card
+                li.neon-carousel__slides__item
+                    +card

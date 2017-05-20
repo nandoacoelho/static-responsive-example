@@ -12,15 +12,27 @@
   font-size: 0
   width: 20px
   height: 20px
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.3)
+  transition: 0.3s
+
+  &:hover
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3)
+
+  @media (min-width: $small-medium)
+    width: 26px
+    height: 26px
 
   @media (min-width: $medium)
     font-size: 12px
-    padding: 8px 35px
+    padding: 10px 35px
     width: initial
     height: initial
 
   .icon
     width: 8px
+
+    @media (min-width: $small-medium)
+      width: 10px
 
     @media (min-width: $medium)
       width: initial
@@ -37,9 +49,22 @@
   flex-direction: row
   align-items: center
   justify-content: center
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.3)
+  transition: 0.3s
+
+  &:hover
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3)
 
   .icon
+    color: $grey-dark
     width: 8px
+
+    @media (min-width: $small-medium)
+      width: 10px
+
+  @media (min-width: $small-medium)
+    width: 26px
+    height: 26px
 
   @media (min-width: $medium)
     width: 40px
@@ -47,3 +72,30 @@
 
     .icon
       width: initial
+
+
+.terciary-button
+  color: $white
+  background: linear-gradient(to right, rgba(5,242,161,1) 0%,rgba(0,166,221,1) 100%);
+  border-radius: 30px
+  text-decoration: none
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  font-size: 12px
+  font-family: $averta-bold
+  line-height: 2.3
+  text-transform: uppercase
+  padding: 0 30px
+  cursor: pointer
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.3)
+  transition: 0.3s
+
+  &:hover
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3)
+
+
+  @media (min-width: $medium)
+    font-size: 20px
+    padding: 0 50px

@@ -7,9 +7,13 @@
   justify-content: space-between
   padding: 0 15px
   background: $white
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.5)
+
+  @media (min-width: $small-medium)
+    height: 50px
 
   @media (min-width: $medium)
-    height: 60px
+    height: 70px
     padding: 0 25px
 
   &__logo-link
@@ -24,6 +28,9 @@
 
   &__logo
     height: 20px
+
+    @media (min-width: $small-medium)
+      height: 25px
 
     @media (min-width: $medium)
       height: 36px
