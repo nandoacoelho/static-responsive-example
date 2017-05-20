@@ -1,5 +1,6 @@
 .neon-hero
   overflow: hidden
+
   &__background
     width: 100%
     margin-top: -60px
@@ -21,21 +22,22 @@
         display: none
 
   &__title
-    z-index: 1
-    font-size: 22px
+    align-items: center
+    animation: fadeInUp 1s
+    animation:
+      delay: 0.3s
+      fill-mode: forwards
     color: $white
+    display: flex
+    flex-direction: column
+    font-size: 22px
     line-height: 1.111
+    margin: 20% auto
+    opacity: 0
     position: absolute
     top: 0
     width: 100%
-    display: flex
-    flex-direction: column
-    align-items: center
-    margin: 20% auto
-    opacity: 0
-    animation: fadeInUp 1s
-    animation-delay: 0.3s
-    animation-fill-mode: forwards
+    z-index: 1
 
     @media (min-width: $small)
       font-size: 26px
